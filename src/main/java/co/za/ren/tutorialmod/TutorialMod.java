@@ -1,6 +1,7 @@
 package co.za.ren.tutorialmod;
 
 import co.za.ren.tutorialmod.block.ModBlocks;
+import co.za.ren.tutorialmod.item.ModItemGroups;
 import co.za.ren.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,6 +23,7 @@ public class TutorialMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerModItemGroups();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
